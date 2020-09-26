@@ -1,0 +1,14 @@
+:host {
+  display: block;
+  height: auto;
+  padding: 8px;
+
+  &[hidden] {
+    display: none;
+  }
+
+  &:hover {
+    background-color: yellow;
+    color: blue;
+  }
+}

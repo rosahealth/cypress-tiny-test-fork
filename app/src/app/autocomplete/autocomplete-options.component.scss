@@ -1,0 +1,13 @@
+.autocomplete {
+  background-color: #fff;
+  box-shadow: 0 0px 6px 0 rgba(0, 0, 0, 0.2);
+  width: 100%;
+  display: block;
+  overflow-y: scroll;
+  border-radius: 8px;
+  max-height: 168px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

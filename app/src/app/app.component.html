@@ -1,0 +1,20 @@
+<div class="spacer">
+  <input
+    placeholder="Search Your Option"
+    [formControl]="control"
+    [appAutocomplete]="autocomplete"
+  />
+  <autocomplete-options #autocomplete="appAutocomplete">
+    <ng-template appAutocompleteContent>
+      <ui-option
+        *ngFor="let option of filteredOptions$ | async"
+        [value]="option.label"
+      >
+        <span>
+          {{ option.label }}
+        </span>
+      </ui-option>
+    </ng-template>
+  </autocomplete-options>
+</div>
+<div>{{ control.value }}</div>
